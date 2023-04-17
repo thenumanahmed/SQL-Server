@@ -1,0 +1,65 @@
+create table DEPARTMENT{
+
+	department_id int,
+	name nvarchar(50),
+	Manager int,
+	Manager_start_date smalldatetime,
+}
+
+
+
+create table project{
+	project_id int,
+	name nvarchar(50),
+	location nvarchar(50),
+	controlling_department int,	
+}
+
+create table employee{
+	SSN int,
+	Bdate smalldatetime,
+	Fname nvarchar(20),
+	Minit nvarchar(1),
+	Lname nvarchar(30),
+	Address nvarchar(100),
+	Salary smallmoney,
+	Sex bit,
+	Department int,
+	Supervisor int,
+}
+
+create table dependent{
+	Relationship nvarchar(30),
+	Birth_date smalldatetime,
+	Sex bit,
+	Employee int,
+}
+
+
+-- task 2
+
+Alter table dependent add DependentName nvarchar(50),
+
+
+-- task 3
+
+Alter table employee alter column Supervisor varchar,
+
+-- task 4
+
+create table Stalkholders(Name varchar 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
